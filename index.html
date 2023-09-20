@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>omNamoBhagavateVasudevaya</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="./tablet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@400;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <!-- header div -->
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    
+    <div id="header">
+      <div id="logo"><img src="om6.png" alt="website-logo"></div>
+      <div id="right">
+        <!-- <i class="ri-fire-line"></i> -->
+        <a class="header-sec pulse" href="#verse"><img src="om6.png" alt="" id="verse-img"> Verse</a>
+        
+        <!-- Enigmas or Conundrums or Mysteries -->
+        <a class="header-sec" href="#mysteries"><i class="ri-question-mark"></i> Mystery</a> 
+        <a class="header-sec" href="#study"> <i class="ri-git-repository-line"></i> Study</a>
+      </div>
+    </div>
+    
+
+    <!-- div for verse content -->
+    <div id="main">
+
+    <div id="verse" class="sticky">
+      <div id="verse-heading">
+        <h2>Get any verse from</h2>
+        <h1><br><i>The Bhagavad Gita</i>  :</h1>
+        <br>
+          <div id="specific-verse" class="verse-position">
+            <!-- <h2 >Specific Verse : </h2> -->
+            <div id="verse-id">
+              <h4>Ch No : &nbsp;</h4><input id="chNo" type="text" />
+              <h4>Verse No : &nbsp;</h4><input id="verseNo" type="text" />  
+            </div>
+            
+            <div id="verse-buttons" >
+              <button id="generate-btn">Generate</button>
+              <button id="random-btn">Random</button>
+            </div>
+
+          </div>
+        
+      </div>
+      
+      <div id="verse-content" class="transVis">
+        <!-- <img
+          class="demo-bg"
+          src="gita1.jpg"
+          alt=""
+        > -->
+        <p id='verse-sanskrit' class=''>यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम्।।4.7।।
+        </p>
+        <p id='verse-eng' class=''>Whenever spirituality decays and materialism is rampant, then, O Arjuna, I reincarnate myself.</p> 
+        <p id='verse-hindi' class=''>।।4.7।। हे भरतवंशी अर्जुन! जब-जब धर्मकी हानि और अधर्मकी वृद्धि होती है, तब-तब ही मैं अपने-आपको साकाररूपसे प्रकट करता हूँ।</p>
+      </div>
+    </div>
+
+    <!-- div for verse meaning -->
+    <div id="scroller">
+      <div id="scroller-in">
+          <h4>ॐ</h4>
+          <h4>नमो</h4>
+          <h4>भगवते</h4>
+          <h4>वासुदेवाय</h4>
+          <h4>Om</h4>
+          <h4>Namo</h4>
+          <h4>Bhagavate</h4>
+          <h4>Vasudevaya</h4>
+      </div>
+      <div id="scroller-in">
+          <h4>ॐ</h4>
+          <h4>नमो</h4>
+          <h4>भगवते</h4>
+          <h4>वासुदेवाय</h4>
+          <h4>Om</h4>
+          <h4>Namo</h4>
+          <h4>Bhagavate</h4>
+          <h4>Vasudevaya</h4>
+      </div>
+    </div>
+
+    <div id="verse-meaning" class="">
+        <div id="verse-meaning-content">
+          <h2 id='verse-meaning-title'>Commentary</h2> 
+          <h4 id='verse-meaning-para'>4.7 यदा यदा whenever? हि surely? धर्मस्य of righteousness? ग्लानिः decline? भवति is? भारत O Bharata? अभ्युत्थानम् rise? अधर्मस्य of unrighteousness? तदा then? आत्मानम् Myself? सृजामि manifest? अहम् I.Commentary Dharma is that which sustains and holds together. There is no proper eivalen for this term in the English language. That which helps a man to attain to Moksha or salvation is Dharma. That which makes a man irreligious or unrighteous is Adharma. That which elevates a man and helps him reach the goal of life and attain knowledge is Dharma that which drags him and hurls him down in the abyss of worldliness and ignorance is Adharma.</h4>
+          <img id="colon1" src="Daco_4314272.png" alt="">
+          <img id="colon2" src="Daco_4378922.png" alt="">
+        </div>
+    </div>
+
+    <!-- div for mysteries -->
+    <div id="mysteries-ref"></div>
+    <div id="mysteries">
+      <div id="top-mysteries" >
+        <div id="scientific" >
+          <h2 data-aos="fade-in" data-aos-offset="200">Scientific</h2>
+          <div id="scientific-btns-div">
+            <button class="scientific-btn blink-1" value="Universe" onclick="getAns(value)" data-aos="fade-down-right">Universe</button>
+            <button class="scientific-btn blink-1" value="Time" onclick="getAns(value)" data-aos="fade-down-left">Time</button>
+            <button class="scientific-btn blink-1" value="Life" onclick="getAns(value)" data-aos="fade-up-right" data-aos-offset="150">Life</button>
+            <button class="scientific-btn blink-1" value="Self" onclick="getAns(value)" data-aos="fade-up-left" data-aos-offset="150">Self</button>
+          </div>
+          
+
+        </div>
+        <div id="spiritual">
+         
+          <h2 data-aos="fade-in" data-aos-offset="200">Spiritual</h2>
+          <div id="spiritual-btns-div">
+            <button class="spiritual-btn blink-1" value="God" onclick="getAns(value)" data-aos="fade-down-right">God</button>
+            <button class="spiritual-btn blink-1" value="Karma" onclick="getAns(value)" data-aos="fade-down-left">Karma</button>
+            <button class="spiritual-btn blink-1" value="Rebirth" onclick="getAns(value)" data-aos="fade-up-right" data-aos-offset="150">Rebirth</button>
+            <button class="spiritual-btn blink-1" value="Dharma" onclick="getAns(value)" data-aos="fade-up-left" data-aos-offset="150">Dharma</button>
+          </div>
+        </div>
+      </div>
+      <div id="bottom-mysteries" >
+        <div id="general" >
+          <h2 data-aos="fade-in" data-aos-offset="200">General</h2>
+          <div id="general-btns-div">
+            <div id="grid-top">
+              <button class="general-btn blink-1" value="Artha" onclick="getAns(value)" data-aos="fade-down-right">Artha</button>
+              <button class="general-btn blink-1" value="Death" onclick="getAns(value)" data-aos="fade-down">Death</button>
+              <button class="general-btn blink-1" value="Liberation" onclick="getAns(value)" data-aos="fade-down">Liberation</button>
+              <button class="general-btn blink-1" value="Evil" onclick="getAns(value)" data-aos="fade-down-left">Evil</button>
+              <button class="general-btn blink-1" value="Success" onclick="getAns(value)" data-aos="fade-right" data-aos-offset="150">Success</button>
+              <button class="general-btn blink-1" value="Ghost" onclick="getAns(value)" data-aos="fade-up-right" data-aos-offset="150">Ghost</button>
+              <button class="general-btn blink-1" value="Pleasure" onclick="getAns(value)" data-aos="fade-up-left" data-aos-offset="150">Pleasure</button>
+              <button class="general-btn blink-1" value="Yoga" onclick="getAns(value)" data-aos="fade-left" data-aos-offset="150">Yoga</button>
+            </div>
+            <div id="grid-bottom">
+              <button class="general-btn blink-1" value="Ignorance" onclick="getAns(value)" data-aos="fade-up" data-aos-offset="100">Ignorance</button>
+              <button class="general-btn blink-1" value="Knowledge" onclick="getAns(value)" data-aos="fade-up" data-aos-offset="100">Knowledge</button>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="qa-section">
+      <div id="what-div" class="qa-div" data-aos="zoom-in" data-aos-offset="200">
+        <h2>What is Universe?</h2>
+        <p>The Universe that we observe, all the planets, stars, galaxies etc. According to Advaita Vedanta is 'unreal'. <br><br> By 'unreal', means that it does exist but is ever changing i.e it is 'that' until is is not 'that'. <br><br> The universe is an appearance in the substance or essence of reality 'Brahman' or 'existence' but it is not existence iteself.<br><br> The universe cannot be expressed in words as it is neither pure being(existence) nor non-being(non-existent). <br><br> The universe is also termed as 'Maya' an illusion or appearance in the existence or Brahman.<br><br> The universe is a dream of which Brahman/existence/consciousness is reality.</p>
+      </div>
+      <div id="how-div" class="qa-div" data-aos="zoom-in" data-aos-offset="200">
+        <h2>How is Universe?</h2>
+        <p>According to Advaita Vedanta, universe was not created and to understand it, we must understand 'Maya'. <br><br> Maya is the power of existence or Brahman. It has two attributes or properties: <br><br>Projection: It projects time, space and causation and through this, entire universe. <br>Veiling: It hides or misprepresents the actual reality or existence as something else.<br><br>Universe is projection of Maya which is power of Brahman. Through Maya time, space and causation are projected. <br><br> These 3 fundamental elements become framework for rest of the universe to exist.</p>
+      </div>
+      <div id="why-div" class="qa-div" data-aos="zoom-in" data-aos-offset="200">
+        <h2>Why is Universe?</h2>
+        <p>The Universe was not created, the projection is not deliberate act, it is natural expression of Brahman's Inherent creative power.<br><br> It is similar to dream unfolding without dreamer's conscious effort. Consciousness i.e Brahman is experiencing itself through this projection i.e Maya.<br><br> Although there was no first act of creation, the universe has been going through eternal cycle of creation, preservation and dissolution.<br><br> During dissolution all individual forms and identity merge into Brahman(existence), only to be projected again during creation stage of next cycle.<br><br> The law of karma keeps this cycle turning infinitely.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="study">
+      <h1 data-aos="fade-in" data-aos-offset="50">Study what interests you :-)</h1>
+      <div id="study-topics">
+        <a href="https://www.youtube.com/watch?v=2mQ9OJGCNpc&list=PLMFNyeu_vMRioDjQw6aq5FaHmhqty6kVd" target="_blank" id="study-topic-1" 
+        data-aos="flip-left" data-aos-offset="100" data-aos-duration="1000">
+          <p>Complete Course on Bhagavad Gita</p>
+          <img src="bhagavadgitaBG1.jpg" alt="">
+        </a>
+        <a href="https://www.youtube.com/watch?v=P14cRV-m6ZY&list=PLDqahtm2vA72ilWvaXhKRDUemEsz4VCKd&index=64" target="_blank" id="study-topic-2" 
+        data-aos="flip-left" data-aos-offset="200" data-aos-duration="1000">
+          <p>Lectures on Advaita Vedanta</p>
+          <img src="advaitavedantaBg4.jpeg" alt="">
+        
+        </a>
+        <a href="https://www.youtube.com/watch?v=HnXkv_ozPQw&list=PLa6CHPhFNfadNcnVZRXa6csHL5sFdkwmV&index=1" target="_blank" id="study-topic-3" 
+        data-aos="flip-left" data-aos-offset="300" data-aos-duration="1000">
+          <p>The Epic Mahabharat</p>
+          <img src="mahabharatBg3.jpg" alt="">
+        
+        </a>
+						
+        <a href="https://www.youtube.com/watch?v=UyxPzCdZXTg&list=PLMFNyeu_vMRgdAryxpnFKmZsFaQu7E4Ni" target="_blank" id="study-topic-4" 
+        data-aos="flip-left" data-aos-offset="380" data-aos-duration="1000">
+          <p>Complete Course on Sanskrit</p>
+          <img src="sanskritBg4.jpg" alt="">
+        </a>
+      </div>
+      <button id="topBtn"><i class="ri-arrow-up-line"></i></button>
+  </div>
+
+    
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="script.js"></script>
+    <script type="module" src="data.js"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 500
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,716 @@
+/* fonts
+font-family: 'Dancing Script', cursive;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Allura', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Allura', cursive;
+font-family: 'Ubuntu', sans-serif;
+  
+  
+  
+  */
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Ubuntu:wght@300;400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  /* color: rgb(0, 210, 225); */
+  /* height: 1000px; */
+  /* background-color: white; */
+  /* background-color: black; */
+  /* font-family: "Dancing Script", cursive; */
+}
+*::selection {
+  background-color: rgb(0, 210, 225);
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* overflow-x: hidden; */
+  /* cursor: none; */
+  background-color: black;
+}
+/* header section styles */
+body::-webkit-scrollbar {
+  display: block;
+  width: 4px;
+  background-color: #000;
+}
+body::-webkit-scrollbar-thumb {
+  /* background-color: rgb(0, 210, 225); */
+  background-color: rgb(0, 210, 225);
+  border-radius: 50px;
+}
+
+/* button animations */
+
+#header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 18vh;
+  border-bottom: 1px solid white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Orbitron", sans-serif;
+  color: rgb(0, 210, 225);
+  z-index: 110;
+}
+#cursor {
+  height: 16px;
+  width: 16px;
+  background-color: rgb(0, 210, 225);
+  position: fixed;
+  z-index: 99;
+  border-radius: 50%;
+}
+#cursor-blur {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(0, 210, 225, 0.206);
+  position: fixed;
+  /* z-index: ; */
+  filter: blur(50px);
+  z-index: 9;
+  border-radius: 50%;
+}
+
+#main {
+  position: relative;
+  background-color: #000;
+  /* z-index: 10; */
+}
+
+video {
+  height: 100%;
+  width: 100%;
+}
+
+#logo img {
+  position: relative;
+  width: 4rem;
+  left: 10rem;
+  /* border: 2px solid orange; */
+  padding: 10px;
+  border-radius: 60px;
+}
+
+#right {
+  font-size: 16px;
+  margin-right: 10vw;
+  font-weight: 600;
+}
+#right a {
+  margin-right: 4rem;
+  cursor: pointer;
+  padding: 6px 20px;
+  border-radius: 20px;
+  transition: all ease 0.5s;
+  text-decoration: none;
+  color: rgb(0, 210, 225);
+  background-color: white;
+}
+#right a:hover {
+  background-color: black;
+  color: black;
+  background-color: rgb(0, 210, 225);
+  cursor: pointer;
+}
+/* #right a:visited{
+  text-decoration: none;
+} */
+
+/* Verse Section styles */
+
+#verse {
+  /* position: relative; */
+
+  height: 100vh;
+  padding-left: 5vh;
+  display: flex;
+  /* justify-content: space-between; */
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(0, 210, 225);
+  position: relative;
+  z-index: 10;
+}
+#verse-heading {
+  flex: 0.5;
+  font-size: 20px;
+}
+
+#verse-heading h2 {
+  position: relative;
+}
+
+#verse-heading h1,
+h2,
+h3,
+input {
+  position: relative;
+}
+#verse input {
+  width: 25px;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 4px;
+}
+
+.verse-position {
+  position: relative;
+  top: 30vh;
+}
+#verse-heading h1 {
+  position: relative;
+  top: 30vh;
+}
+#verse-heading h2 {
+  position: relative;
+  top: 35vh;
+}
+#verse-ways {
+  display: flex;
+}
+#verse-ways div {
+  margin-right: 10vh;
+}
+#specific-verse h4 {
+  display: inline-block;
+}
+#verse-buttons {
+  margin-top: 5vh;
+}
+#verse-buttons button {
+  padding: 8px 16px;
+  /* border: 2px solid white; */
+  font-family: "Roboto", sans-serif;
+  border: none;
+  font-weight: bold;
+  color: rgb(0, 210, 225);
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+#verse-buttons button:hover {
+  color: black;
+  background-color: rgb(0, 210, 225);
+}
+.demo-bg {
+  opacity: 0.2;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 5px;
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+}
+#verse-content {
+  /* background-color: red; */
+  position: relative;
+  flex: 0.7;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  /* background-color: red; */
+  /* padding-right: 30px; */
+  height: 60vh;
+  max-width: 90vh;
+  padding: 0 10vh;
+  margin-top: 6rem;
+  top: 36vh;
+  /* border: 2px solid white; */
+  border-radius: 16px;
+  transition: opacity 0.5s;
+  /* background-image: url("./lord-krishna-krishna.gif") ;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  z-index: 10;
+}
+#verse-content p {
+  margin-bottom: 2rem;
+  /* background-color: green; */
+}
+.hidden {
+  opacity: 0;
+}
+
+#verse-sanskrit {
+  color: orange;
+}
+#verse-eng {
+  color: white;
+}
+#verse-hindi {
+  color: green;
+}
+
+#scroller {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+#scroller h4 {
+  display: inline-block;
+}
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 600px;
+  font-family: "Orbitron", sans-serif;
+  margin-right: 10px;
+  color: transparent;
+  transition: all linear 0.5s;
+  -webkit-text-stroke: 2px rgb(0, 210, 225);
+  /* color:white; */
+}
+#scroller h4:hover {
+  color: rgb(0, 210, 225);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#verse-meaning {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 16rem;
+  font-size: 20px;
+
+  /* z-index: 10; */
+}
+
+#verse-meaning-content {
+  background-color: #000;
+  color: rgb(0, 210, 225);
+  position: absolute;
+  font-family: sans-serif;
+  margin-top: 4rem;
+
+  width: 60vw;
+  /* z-index: 99; */
+  transition: opacity 1s;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+#verse-meaning-title {
+  font-size: 40px;
+  margin-left: 40vh;
+  color: orange;
+  margin-bottom: 2rem;
+}
+#verse-meaning-content img {
+  position: relative;
+  height: 40px;
+}
+#verse-meaning-content #colon1 {
+  left: -5rem;
+  top: -15rem;
+}
+#verse-meaning-content #colon2 {
+  left: 45rem;
+  top: 0rem;
+}
+
+/* mystery section styles */
+#mysteries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: sans-serif;
+  /* background-color: red; */
+  top: 200vh;
+  height: 100vh;
+  width: 100%;
+  color: rgb(0, 210, 225);
+  background-color: black;
+  margin-left: -1rem;
+}
+
+#mysteries button {
+  padding: 10px;
+  padding-bottom: 24px;
+  width: 6rem;
+  height: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  transition: all ease 0.5s;
+}
+#mysteries button:hover {
+  color: white;
+  background-color: rgb(0, 210, 225);
+  border-color: transparent;
+}
+#top-mysteries {
+  /* position: absolute; */
+  display: flex;
+  height: 40%;
+  width: 60%;
+  /* background-color: green; */
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+#bottom-mysteries {
+  height: 60%;
+  width: 60%;
+  /* background-color: blue; */
+}
+#top-mysteries div {
+  position: relative;
+  height: 100%;
+  width: 45%;
+
+  /* background-color: hotpink; */
+}
+
+/* styling the items inside the scientific div */
+#scientific {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#scientific h2 {
+  margin: 40px auto 0 auto;
+  /* margin-top: 40px; */
+}
+#scientific-btns-div {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 80px 80px;
+  grid-template-rows: 30px 30px;
+  row-gap: 20px;
+  column-gap: 30px;
+  margin-right: 2.5rem;
+}
+.scientific-btn {
+  padding: 0;
+  border-radius: 10px;
+}
+
+/* styling the items inside the spiritual div */
+#spiritual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#spiritual h2 {
+  margin: 40px auto 0 auto;
+  /* margin-top: 40px; */
+}
+#spiritual-btns-div {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 80px 80px;
+  grid-template-rows: 30px 30px;
+  row-gap: 20px;
+  column-gap: 30px;
+  margin-right: 2.5rem;
+}
+.spiritual-btn {
+  padding: 0;
+  border-radius: 10px;
+}
+
+/* styling the items inside the general div */
+#general {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#general h2 {
+  margin: 0 auto 0 auto;
+  /* margin-top: 40px; */
+}
+#general-btns-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+#grid-top {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 30px 30px;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+#grid-bottom {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: 80px 80px;
+  grid-template-rows: 30px 30px;
+  row-gap: 10px;
+  column-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.general-btn {
+  padding: 0;
+  border-radius: 10px;
+}
+
+#qa-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: sans-serif;
+  /* background-color: red; */
+  top: 300vh;
+  height: 100vh;
+  width: 100%;
+  /* color: rgb(0, 210, 225); */
+  background-color: white;
+}
+
+#qa-section div {
+  /* background-color: green; */
+  color: rgb(0, 210, 225);
+  text-align: center;
+  height: 70%;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  border: 2px solid white;
+  background-color: black;
+  /* z-index: 10; */
+  transition: all ease 1s;
+}
+#qa-section div {
+  flex: 0.3;
+}
+/* #qa-section div:hover {
+  color: white;
+} */
+#qa-section div h2 {
+  margin-bottom: 2rem;
+}
+#qa-section div p {
+  margin-bottom: 1.5rem;
+}
+#what-div {
+  flex: 0.3;
+  transition: opacity 0.5s;
+}
+#how-div {
+  flex: 0.3;
+  transition: opacity 0.5s;
+}
+#why-div {
+  flex: 0.3;
+  transition: opacity 0.5s;
+}
+
+#study {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: sans-serif;
+  /* background-color: red; */
+  top: 400vh;
+  height: 100vh;
+  width: 100%;
+  /* color: rgb(0, 210, 225); */
+  color: white;
+  background-color: black;
+}
+#study h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+#study-topics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+#study a {
+  text-decoration: none;
+
+  width: 16rem;
+  height: 18rem;
+  text-align: center;
+  /* padding: 2rem 4rem; */
+  border-radius: 20px;
+  margin-top: 2rem;
+  z-index: 110;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  /* background-color should be in p */
+}
+#study a p {
+  height: 100%;
+  width: 100%;
+  color: #000;
+  background-color: rgb(0, 210, 225);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: absolute;
+  z-index: 10;
+  transition: all ease 0.5s;
+}
+#study a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  scale: 1.1;
+}
+#study a:hover p {
+  color: white;
+  background-color: transparent;
+}
+#study a:hover img {
+  scale: 1;
+}
+#study-topic-1 {
+  position: relative;
+  /* left: -15rem; */
+}
+#study-topic-2 {
+  position: relative;
+  /* right: -15rem; */
+}
+#study-topic-3 {
+  position: relative;
+  /* left: -15rem; */
+}
+#study-topic-4 {
+  position: relative;
+  /* right: -15rem; */
+}
+#topBtn {
+  position: fixed;
+  height: 120px;
+  width: 120px;
+  bottom: 0px;
+  right: -20px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgb(0, 210, 225);
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: none;
+  transition: all ease 0.5s;
+}
+#topBtn i {
+  font-size: 30px;
+  font-weight: 100;
+  transition: all ease 0.5s;
+}
+#topBtn:hover {
+  scale: 0.55;
+  background-color: rgb(0, 210, 225);
+}
+#topBtn:hover i {
+  font-size: 40px;
+}
+
+/* animations for the button */
+
+/* for the scientific buttons */
+.blink-1:hover {
+  -webkit-animation: blink-1 0.6s both;
+  animation: blink-1 0.6s both;
+}
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.ri-fire-line {
+  color: orange;
+}
+.ri-question-mark {
+  color: purple;
+}
+.ri-git-repository-line {
+  color: green;
+}
+#verse-img {
+  position: relative;
+  height: 20px;
+  top: 3px;
+}
